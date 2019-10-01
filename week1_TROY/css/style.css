@@ -1,0 +1,34 @@
+h1 {
+
+	font-family: futura;
+	font-size: 63px;
+}
+
+h2 {
+
+	font-family: helvetica;
+	font-size: 32px;
+
+}
+
+h3 {
+
+	font-family: helvetica;
+	font-size: 22px;
+
+}
+
+p {
+
+	font-family: helvetica;
+	font-size: 20px;
+
+}
+
+.right{
+    float:right;
+}
+
+.left{
+    float:left;
+}
