@@ -1,0 +1,98 @@
+html, body {
+	
+height: 100%;
+background-image: url("../images/image_8.png");
+background-size: 1200px;
+}
+a {
+	
+text-decoration: none;
+color: grey;
+}
+
+a:hover {
+	
+color: black;
+	
+}
+
+.settings{
+	
+position: absolute;
+background: white;
+width: 23%;
+height: 7.5%;
+padding-left: 1100px;
+}
+
+.home {
+	
+padding-left: 10px;
+	
+}
+
+
+.menu {
+	
+background: white;
+width: 17.5%;
+height: 100%;
+position: relative;
+}
+
+.links {
+padding-left: 20px;
+font-family: helvetica;
+font-weight: lighter;
+font-size: 23px;
+line-height: 122%;
+padding-top: 7px;
+}
+	
+
+.searchText {
+position: absolute;
+padding-left: 375px;
+padding-top: 312.5px;
+color: grey;
+font-family: helvetica;
+font-weight: 200;
+font-size: 63px;
+}
+
+.search{
+
+position: absolute;
+padding-left: 350px;
+padding-top: 300px;
+}
+
+
+
+#wrapper {
+width: 500px;
+border: 1px;
+}
+
+#first {
+width: 80px;
+border: 1px;
+float: left;
+
+}
+
+#second {
+border: 1px;
+
+}
+
+
+
+h3 {
+	padding-left: 35px;
+	font-family: helvetica;
+	font-size: 30px;
+	padding-top: 10px;
+}
+
+
