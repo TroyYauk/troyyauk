@@ -1,0 +1,191 @@
+html, body {
+	
+height: 100%;
+background-image: url("../images/image_8.png");
+background-size: 1200px;
+margin: unset;
+}
+
+
+.settings{
+	
+position: absolute;
+background: white;
+width: 25%;
+height: 7.5%;
+padding-left: 1100px;
+}
+
+.home {
+	
+padding-left: 10px;
+	
+}
+
+
+.menu {
+	
+background: white;
+width: 17.5%;
+height: 100%;
+position: relative;
+}
+	
+
+.searchText {
+position: absolute;
+padding-left: 375px;
+padding-top: 312.5px;
+color: grey;
+font-family: helvetica;
+font-weight: 200;
+font-size: 63px;
+}
+
+.search{
+
+position: absolute;
+padding-left: 350px;
+padding-top: 300px;
+}
+
+
+
+#wrapper {
+width: 500px;
+border: 1px;
+}
+
+#first {
+width: 80px;
+border: 1px;
+float: left;
+padding-top: 50px;
+
+}
+
+#second {
+border: 1px;
+
+}
+
+.header {
+padding-left: 55px;
+font-size: 30px;
+padding-top: 50px;
+font-family: Helvetica;
+font-weight: bold;
+}
+
+
+#firstBox {
+
+height: 55px;
+width: 252px;
+background-color: transparent;
+position: fixed;
+}
+
+
+#firstBox:hover {
+background-color: lightgrey;
+opacity: 0.5;
+height: 55px;
+width: 252px;
+}
+
+.FirstBox{
+	padding-top: 50px;
+}
+
+#secondBox {
+
+height: 55px;
+width: 252px;
+background-color: transparent;
+position: fixed;
+}
+
+#secondBox:hover {
+background-color: lightgrey;
+opacity: 0.5;
+height: 55px;
+width: 252px;
+}
+
+.SecondBox {
+padding-top: 35px;
+}
+
+#thirdBox { height: 55px;
+width: 252px;
+background-color: transparent;
+position: fixed;
+
+}
+#thirdBox:hover {
+background-color: lightgrey;
+opacity: 0.5;
+height: 55px;
+width: 252px;
+}
+.ThirdBox {
+
+	padding-top: 77px;
+}
+
+#fourthBox { 
+height: 55px;
+width: 252px;
+background-color: transparent;
+position: fixed;
+}
+
+#fourthBox:hover {
+background-color: lightgrey;
+opacity: 0.5;
+height: 55px;
+width: 252px;
+}
+.FourthBox {
+
+	padding-top: 10px;
+}
+
+#fifthBox { 
+height: 55px;
+width: 252px;
+background-color: transparent;
+position: fixed;
+}
+
+#fifthBox:hover {
+background-color: lightgrey;
+opacity: 0.5;
+height: 55px;
+width: 252px;
+}
+.FifthBox {
+
+	padding-top: 35px;
+}
+
+#sixthBox { 
+height: 55px;
+width: 252px;
+background-color: transparent;
+position: fixed;
+}
+
+#sixthBox:hover {
+background-color: lightgrey;
+opacity: 0.5;
+height: 55px;
+width: 252px;
+}
+.SixthBox {
+
+	padding-top: 35px;
+}
+
+
