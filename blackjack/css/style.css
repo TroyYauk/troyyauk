@@ -1,0 +1,191 @@
+#background
+{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	width: 1460px;
+}
+
+#title
+{
+	color: white;
+	margin-top: none;
+	position: relative;
+}
+
+#start
+{
+	position: relative;
+	font-family: futura;
+	font-size: 50px;
+	color: white;
+	background-color: green;
+	width: 200px;
+	height: 100px;
+	left: 600px;
+}
+
+a
+{
+	position: absolute;
+	text-decoration: none;
+	font-family: futura;
+	color: white;
+	font-size: 24px;
+	left: 582px;
+	top: 545px;
+}
+
+
+
+#dealDesign
+{
+	position: absolute;
+	left: 625px;
+	top: 300px;
+	width: 200px;
+	height: 75px;
+	border-radius: 10%;
+	font-size: 50px;
+	background-color: green;
+	color: white;
+}
+
+#buttonDesign1
+{
+	position: relative;
+	top: 240px;
+	border-radius: 20%;
+	width: 125px;
+	height: 50px;
+	color: white;
+	background-color: green;
+	font-size: 30px;
+	left: 50px;
+
+}
+
+#playerOne
+{
+	position: absolute;
+	top: 500px;
+	left: 565px;
+}
+
+#hitting
+{
+	position: absolute;
+	top: 500px;
+	left: 875px;
+}
+
+#hitting2
+{
+	position: absolute;
+	top: 500px;
+	left: 950px;
+}
+
+#buttonDesign2
+{
+	position: relative;
+	top: 0px;
+	border-radius: 20%;
+	width: 125px;
+	height: 50px;
+	color: white;
+	background-color: green;
+	font-size: 30px;
+	opacity: 0%;
+}
+
+#buttonDesign3
+{
+	position: relative;
+	top: 240px;
+	border-radius: 20%;
+	width: 125px;
+	height: 50px;
+	color: white;
+	background-color: green;
+	font-size: 30px;
+	left: -50px;
+}
+
+#playerTwo
+{
+	position: absolute;
+	top: 500px;
+	left: 725px;
+}
+
+#result
+{
+	position: absolute;
+	left: 20px;
+	padding-top: 5px;
+	width: 400px;
+	height: 75px;
+	background-color: rebeccapurple;
+	color: white;
+	font-family: futura;
+	font-size: 50px;
+	opacity: 0%;
+}
+
+#dealerOne
+{
+	position: relative;
+	left: 47.5px;
+}
+
+#dealerTwo
+{
+	position: relative;
+	left: 47.5px;
+}
+
+#timer
+{
+	position: absolute;
+	width: 125px;
+	height: 65px;
+	left: 1200px;
+	background-color: white;
+	font-size: 50px;
+	font-family: avenir;
+	opacity: 0%;
+}
+
+#timerTrim
+{
+	position: absolute;
+	width: 155px;
+	height: 95px;
+	left: 1200px;
+	background-color: white;
+	font-size: 50px;
+	font-family: avenir;
+	opacity: 0%;
+}
+
+#reset
+{
+	position: absolute;
+	left: 650px;
+	width: 150px;
+	height: 42.5px;
+	font-family: avenir;
+	font-size: 30px;
+	background-color: purple;
+	opacity: 0%;
+}
+
+
+
+
+
+
+
+
+

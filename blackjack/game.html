@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Black Jack</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<img id="background" src = "images/image_1.png">
+	<div align = CENTER>
+
+		
+		<br>
+		<img id="dealerOne" src = "images/image_one.png" width = 100>
+		<img id="dealerTwo" src = "images/image_one.png" width = 100>
+		<img id="dealerThree" width = 100>
+		<button id="dealDesign" onclick="deal()">DEAL</button>
+		<br>
+		<img id="playerOne" src = "images/image_one.png" width=150>
+		<img id="playerTwo" src = "images/image_one.png" width=150>
+		<img id="hitting" width=150>
+		<img id="hitting2" width=150>
+		<br>
+		<button id="buttonDesign1" onclick="hit()">HIT</button>
+		<button id="buttonDesign2" onclick="hit2()">HIT</button>
+		<button id="buttonDesign3" onclick="stay()">STAY</button>
+		<p id="result"></p>
+
+		<p id="timerTrim">0:00</p>
+		<p id="timer">0:00</p>
+
+		<button id="reset" onclick="restart()">RESTART</button>
+	</div>
+	<script src = "js/script.js"></script>
+</body>
+</html>
