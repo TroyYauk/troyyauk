@@ -125,7 +125,7 @@ a
 	left: 20px;
 	padding-top: 5px;
 	width: 400px;
-	height: 75px;
+	height: 80px;
 	background-color: rebeccapurple;
 	color: white;
 	font-family: futura;
@@ -140,6 +140,12 @@ a
 }
 
 #dealerTwo
+{
+	position: relative;
+	left: 47.5px;
+}
+
+#dealerThree
 {
 	position: relative;
 	left: 47.5px;
@@ -179,6 +185,7 @@ a
 	font-size: 30px;
 	background-color: purple;
 	opacity: 0%;
+	color: white;
 }
 
 

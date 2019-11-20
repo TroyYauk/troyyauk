@@ -62,6 +62,9 @@ function hit ()
 		document.getElementById("result").style.left = "500px";		
 		document.getElementById("result").style.opacity = "100%";
 		dealer2();
+		document.getElementById("reset").style.opacity = "100%";
+		document.getElementById("reset").style.top = "375px";
+
 	}
 	i = 31;
 }
@@ -75,6 +78,9 @@ function hit2()
 		document.getElementById("result").style.left = "500px";		
 		document.getElementById("result").style.opacity = "100%";
 		dealer2();
+		document.getElementById("reset").style.opacity = "100%";
+		document.getElementById("reset").style.top = "375px";
+
 	}
 
 	document.getElementById("playerOne").style.left = "420px";
@@ -88,14 +94,11 @@ function hit2()
 
 function stay()
 {
-	if(evaluate == false)
-		dealer2();
-
-	if(dealerCards < 16)
+	dealer2();
+	if(dealerCards < 17)
 		dealerAdding();
-
-	gameOver();
-	gamePlay = false;
+	else
+		gameOver();
 
 }
 
@@ -110,7 +113,7 @@ function gameOver()
 			document.getElementById("result").style.opacity = "100%";
 		}
 	}
-	if(dealerCards < playerCards)
+	if(dealerCards < playerCards || (dealerCards > 21 && playerCards < 22))
 	{
 		if(playerCards < 22)
 		{
@@ -119,6 +122,7 @@ function gameOver()
 			document.getElementById("result").style.opacity = "100%";
 		}
 	}
+
 	document.getElementById("reset").style.opacity = "100%";
 	document.getElementById("reset").style.top = "375px";
 }
@@ -277,6 +281,8 @@ function dealer2()
 
 	dealerCards = dealerCards + cardSelection;
 	evaluate = true;
+	/*if(dealerCards < 16)*/
+		dealerAdding();
 }
 
 function addCards()
@@ -381,7 +387,21 @@ function dealerAdding()
 		document.getElementById("dealerThree").src = "images/cards/"+suite+"/10.png";
 
 	dealerCards = dealerCards + cardSelection;
+
+	document.getElementById("dealerOne").style.left = "0px";
+	document.getElementById("dealerTwo").style.left = "0px";
+	document.getElementById("dealerThree").style.left = "0px";
+
+	gameOver();
 }
+
+
+
+
+
+
+
+
 
 
 
