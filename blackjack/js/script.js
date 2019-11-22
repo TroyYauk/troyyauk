@@ -11,7 +11,8 @@ function deal ()
 {
 	cards();
 	setInterval(addVal, 1000);
-
+	document.getElementById("buttonDesign1").style.opacity = "100%";
+	document.getElementById("buttonDesign3").style.opacity = "100%";
 }
 
 function addVal()

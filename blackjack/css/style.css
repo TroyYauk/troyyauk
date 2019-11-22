@@ -62,7 +62,7 @@ a
 	background-color: green;
 	font-size: 30px;
 	left: 50px;
-
+	opacity: 0%;
 }
 
 #playerOne
@@ -110,6 +110,7 @@ a
 	background-color: green;
 	font-size: 30px;
 	left: -50px;
+	opacity: 0%;
 }
 
 #playerTwo
