@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OPTIMA TV</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/fullScreen.css">
+	<link rel="stylesheet" type="text/css" href="css/audioStyle.css">
+</head>
+<body id="body">
+	<a id="dS" style="position: absolute; left: 590px; font-size: 45px; top: 35px" 
+	href = "albums.html">Albums</a>
+	<a id="dS" style="position: absolute; left: 765px; font-size: 45px; top: 35px" 
+	href = "artists.html">Artists</a>
+	<a id="dS" style="position: absolute; left: 915px; font-size: 45px; top: 35px" 
+	href = "songs.html">Songs</a>
+	<div id="fB"></div>
+	
+	<h1 id="sD"></h1>
+	<h1 id="dD"style="font-size: 40px; top: 170px"></h1>
+	<h2 id="sS"></h2>
+
+	<audio width="1300" preload="metadata" id="myAudio">
+			<source src="optimaTV/music/songs/audio_6.mp3" type="audio/mp3">
+	</audio>
+
+	<img id="artwork" src = "images/songArtwork/image_10.png">
+
+	<a href = "songs.html"><img id="return" src = "images/icons/back.png"></a>
+
+	<img id="darkMode" src = "images/icons/dark.png">
+	<button id="darkButton" onclick="darkMode()"></button>
+
+	<img id="darkModeOff" src = "images/icons/dark.png">
+	<button id="darkButtonOff" onclick="darkModeOff()"></button>
+
+	<img id="play" src = "images/icons/playAudio.png">
+	<button id="playButton" onclick="play()"></button>
+
+	<img id="pause" src = "images/icons/pauseAudio.png">
+	<button id="pauseButton" onclick="pause()"></button>
+
+	<img id="skip" src = "images/icons/skip.png">
+	<button id="skipButton" onclick="skip()"></button>
+
+	<img id="previous" src = "images/icons/previous.png">
+	<button id="previousButton" onclick="previous()"></button>
+
+	<img id="volume" src = "images/icons/volume_3.png">
+	<button id="volumeButton" onclick="volume()"></button>
+
+	<div id="volumeInfo"></div>
+	<img id="minus" src = "images/icons/minus.png">
+	<button id="minusButton" onclick="minus()"></button>
+	<img id="plus" src = "images/icons/plus.png">
+	<button id="plusButton" onclick="plus()"></button>
+
+	<div id="volumeLine"></div>
+	<div id="volumeLineLevel"></div>
+	<div id="volumeLevel"></div>
+
+
+
+
+	<img id="fullScreen" src = "images/icons/fullScreen.png">
+	<button id="fullButton" onclick="fullScreen()"></button>
+	<img id="closeScreen" src = "images/icons/fullScreen.png">
+	<button id="closeButton" onclick="closeScreen()"></button>
+
+	<div id="timeline"></div>
+	<div id="timecode"></div>
+
+	<div id="fullTime"></div>
+	<div id="fullTimeCode"></div>
+
+	<p id="warning">Please Press Play<br>Before Entering Full Screen</p>
+
+	<script src = "js/audioScript.js"></script>
+	<script src = "js/fullScreen.js"></script>
+	<script src = "js/shuffleScript.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

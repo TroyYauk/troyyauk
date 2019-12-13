@@ -1,0 +1,111 @@
+h1
+{
+	position: absolute;
+	font-family: helvetica;
+	font-size: 45px;
+	left: 325px;
+	top: -10px;
+}
+
+h2
+{
+	position: absolute;
+	font-family: helvetica;
+	font-size: 36px;
+	left: 300px;
+	top: 100px;
+}
+
+#listBackground
+{
+	position: absolute;
+	left: 300px;
+	top: 200px;
+	width: 760px;
+	height: 451.5px;
+	background-color: #EBEBEB;
+}
+
+.seperator
+{
+	position: absolute;
+	left: 300px;
+	top: 200px;
+	width: 760px;
+	height: 1.5px;
+	background-color: grey;
+}
+
+.songTitle
+{
+	position: absolute;
+	font-family: helvetica-light;
+	font-size: 24px;
+	left: 375px;
+	top: 185px;
+}
+
+a
+{
+
+	position: absolute;
+	font-family: helvetica-bold;
+	font-size: 28px;
+	top: 75px;
+	color: black;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: grey;
+}
+
+#taskbar
+{
+	position: absolute;
+	margin-top: none;
+	left: 0px;
+	top: 0px;
+	background-color: lightgrey;
+	width: 250px;
+	height: 825px;
+}
+
+#artwork
+{
+	position: absolute;
+	left: 300px;
+	top: 100px;
+	background-color: white;
+	stroke: 0px;
+	width: 300px;
+	height: 175px;
+}
+
+#mediaSelection
+{
+	position: absolute;
+	left: 300px;
+	top: 100px;
+	background-color: white;
+	stroke: 0px;
+	width: 300px;
+	height: 175px;
+	opacity: 0%;
+}
+
+#play
+{
+	position: absolute;
+	width: 35px;
+	left: 312.5px;
+	top: 130px;
+}
+
+
+
+
+
+
+

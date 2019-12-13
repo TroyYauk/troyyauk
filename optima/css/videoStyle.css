@@ -1,0 +1,156 @@
+/* Chrome, Safari and Opera syntax */
+:-webkit-full-screen {
+  background-color: black;
+}
+
+/* Firefox syntax */
+:-moz-full-screen {
+  background-color: black;
+}
+
+/* IE/Edge syntax */
+:-ms-fullscreen {
+  background-color: black;
+}
+
+/* Standard syntax */
+:fullscreen {
+  background-color: black;
+}
+
+#play
+{
+	position: absolute;
+	width: 125px;
+	left: 655px;
+	top: 695px;
+}
+
+#playButton
+{
+	position: absolute;
+	width: 125px;
+	height: 125px;
+	top: 695px;
+	left: 655px;
+	opacity: 0%;
+}
+
+#pause
+{
+	position: absolute;
+	width: 125px;
+	left: 1000px;
+	top: 695px;
+	opacity: 0%;
+}
+
+#pauseButton
+{
+	position: absolute;
+	width: 125px;
+	height: 125px;
+	left: 1000px;
+	top: 695px;
+	opacity: 0%;
+}
+
+#forward
+{
+	position: absolute;
+	width: 100px;
+	left: 775px;
+	top: 705px;
+}
+#forwardButton
+{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 775px;
+	top: 705px;
+	opacity: 0%;
+}
+
+#rewind
+{
+	position: absolute;
+	width: 100px;
+	left: 560px;
+	top: 705px;
+}
+#rewindButton
+{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: 560px;
+	top: 705px;
+	opacity: 0%;
+}
+
+#back
+{
+	position: absolute;
+	width: 75px;
+	left: 10px;
+	top: 10px;
+}
+
+#backButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 10px;
+	top: 10px;
+	opacity: 0%;
+}
+
+#scroll
+{
+	position: relative;
+	width: 1300px;
+	height: 25px;
+	top: -50px;
+	background-color: lightgrey;
+}
+
+#gradBack
+{
+	position: relative;
+	width: 1300px;
+	height: 100px;
+	top: -50px;
+	background-color: orange;
+}
+
+#curTimeScroll
+{
+	position: relative;
+	width: 10px;
+	height: 25px;
+	left: 60px;
+	top: -75px;
+	background-color: orange;
+}
+
+#curTime
+{
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background-color: white;
+	border-radius: 50%;
+	left: -650px;
+	top: -105px; 
+}
+
+
+
+
+
+
+
+
+

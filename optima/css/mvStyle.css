@@ -1,0 +1,453 @@
+/* Chrome, Safari and Opera syntax */
+:-webkit-full-screen {
+  background-color: black;
+}
+
+/* Firefox syntax */
+:-moz-full-screen {
+  background-color: black;
+}
+
+/* IE/Edge syntax */
+:-ms-fullscreen {
+  background-color: black;
+}
+
+/* Standard syntax */
+:fullscreen {
+  background-color: black;
+}
+
+h1
+{
+	position: relative;
+	font-family: helvetica;
+	font-size: 210px;
+	top: -575px;
+}
+
+a
+{
+
+	position: absolute;
+	font-family: helvetica-bold;
+	font-size: 48px;
+	top: 75px;
+	color: black;
+	text-decoration: none;
+}
+
+#tet
+{
+	position: absolute;
+	font-family: helvetica-bold;
+	font-size: 48px;
+	top: 75px;
+	color: white;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: grey;
+}
+
+#taskbar
+{
+	position: absolute;
+	margin-top: none;
+	left: 0px;
+	top: 0px;
+	background-color: lightgrey;
+	width: 250px;
+	height: 1005px;
+}
+
+#artwork
+{
+	position: absolute;
+	left: 300px;
+	top: 100px;
+	background-color: white;
+	stroke: 0px;
+	width: 300px;
+	height: 175px;
+}
+
+#mediaSelection
+{
+	position: absolute;
+	left: 300px;
+	top: 100px;
+	background-color: white;
+	stroke: 0px;
+	width: 300px;
+	height: 175px;
+	opacity: 0%;
+}
+
+#play
+{
+	position: absolute;
+	width: 75px;
+	left: 300px;
+	top: 700px;
+}
+
+#playButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 300px;
+	top: 700px;
+	opacity: 0%;
+}
+
+#pause
+{
+	position: absolute;
+	width: 75px;
+	left: 900px;
+	top: 700px;
+	opacity: 0%;
+}
+
+#pauseButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 900px;
+	top: 700px;
+	opacity: 0%;
+}
+
+#fullScreen
+{
+	position: absolute;
+	width: 75px;
+	left: 1145px;
+	top: 700px;
+}
+
+#fullButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 1145px;
+	top: 700px;
+	opacity: 0%;
+}
+
+#closeScreen
+{
+	position: absolute;
+	width: 75px;
+	left: 1345px;
+	top: 780px;
+	opacity: 0%;
+}
+
+#closeButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 1345px;
+	top: 780px;
+	opacity: 0%;
+}
+
+#forward
+{
+	position: absolute;
+	width: 75px;
+	left: 380px;
+	top: 700px;
+}
+
+#forwardButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 380px;
+	top: 700px;
+	opacity: 0%;
+}
+
+#rewind
+{
+	position: absolute;
+	width: 75px;
+	left: 220px;
+	top: 700px;
+}
+
+#rewindButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 220px;
+	top: 700px;
+	opacity: 0%;
+}
+
+#box
+{
+	position: absolute;
+	width: 1000px;
+	height: 562.5px;
+	background-color: white;
+	top: 100px;
+	left: 220px;
+}
+
+#timeline
+{
+	position: absolute;
+	height: 75px;
+	width: 600px;
+	top: 700px;
+	left: 460px;
+	background-color: lightgrey;
+}
+
+#timeframe
+{
+	position: absolute;
+	height: 75px;
+	width: 0px;
+	top: 700px;
+	left: 460px;
+	background-color: white;
+}
+
+#hover
+{
+	position: absolute;
+	height: 700px;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: red;
+	opacity: 0%;
+}
+
+#volume
+{
+	position: absolute;
+	width: 75px;
+	left: 1065px;
+	top: 700px;
+}
+
+#volumeButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 1065px;
+	top: 700px;
+	opacity: 0%;
+}
+
+#volumeInfo
+{
+	position: absolute;
+	width: 300px;
+	height: 60px;
+	left: 952.5px;
+	top: 635px;
+	background-color: lightgrey;
+	opacity: 0%;
+}
+
+#minus
+{
+	position: absolute;
+	width: 50px;
+	left: 957.5px;
+	top: 640px;
+	opacity: 0%;
+}
+
+#minusButton
+{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 957.5px;
+	top: 640px;
+	opacity: 0%;
+	opacity: 0%;
+}
+
+#plus
+{
+	position: absolute;
+	width: 50px;
+	left: 1197.5px;
+	top: 640px;
+	opacity: 0%;
+}
+
+#plusButton
+{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 1197.5px;
+	top: 640px;
+	opacity: 0%;
+}
+
+#volumeLine
+{
+	position: absolute;
+	width: 180px;
+	height: 5px;
+	top: 662.5px;
+	left: 1012.5px;
+	background-color: grey;
+	opacity: 0%;
+}
+
+#volumeLevelLine
+{
+	position: absolute;
+	width: 180px;
+	height: 5px;
+	top: 662.5px;
+	left: 1012.5px;
+	background-color: white;
+	opacity: 0%;
+}
+
+#volumeLevel
+{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 655px;
+	left: 1172.5px;
+	border-radius: 50%;
+	background-color: white;
+	opacity: 0%;
+}
+
+#return
+{
+	position: absolute;
+	width: 75px;
+	top: -50px;
+	left: 20px;
+}
+
+#fullPlay
+{
+	position: absolute;
+	font-family: helvetica-light;
+	font-size: 26px;
+	height: 75px;
+	width: 280px;
+	background-color: lightgrey;
+	color: black;
+	padding-left: 50px;
+	padding-top: 10px;
+	left: 1000px;
+	top: 607.5px;
+	opacity: 0%;
+}
+
+#countUp
+{
+	position: absolute;
+	font-family: helvetica-light;
+	font-size: 65px;
+	color: black;
+	left: 465px;
+	top: 635px;
+}
+
+#warning
+{
+	position: absolute;
+	width: 580px;
+	height: 40px;
+	left: 400px;
+	top: 100px;
+	background-color: black;
+	font-family: helvetica-light;
+	font-size: 25px;
+	color: white;
+	padding-top: 10px;
+	padding-left: 30px;
+	opacity: 75%;
+	display: none;
+}
+
+#mInfo1
+{
+	position: absolute;
+	left: 750px;
+	top: 5px;
+	font-family: helvetica-bold;
+	font-size: 40px;
+	display: none;
+}
+
+#mInfo2
+{
+	position: absolute;
+	left: 750px;
+	top: 60px;
+	font-family: helvetica-bold;
+	font-size: 35px;
+	display: none;
+}
+
+#mInfo3
+{
+	position: absolute;
+	left: 750px;
+	top: 110px;
+	font-family: helvetica-bold;
+	font-size: 28px;
+	display: none;
+}
+
+#mButton
+{
+	position: absolute;
+	left: 285px;
+	top: 25px;
+	width: 425px;
+	height: 227.5px;
+	opacity: 0%;
+}
+
+#startVideo
+{
+	position: absolute;
+	left: 740px;
+	top: 175px;
+	font-family: helvetica-bold;
+	font-size: 28px;
+	display: none;
+	background: none;
+	border: none;
+	color: grey;
+}
+
+
+
+
+
+
+
+
+

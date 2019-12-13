@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OPTIMA</title>
+	<link rel="stylesheet" type="text/css" href="css/mvStyle.css">
+</head>
+<body>
+	<div id="taskbar"></div>
+
+	<a style="font-size: 28px"href = "recents.html">Recently Added</a>
+	<a style="font-size: 28px; top: 115px; left: 125px" href = "movies.html">Movies</a>
+	<a style="font-size: 28px; top: 155px; left: 92.5px" href = "tvSeries.html">TV Series</a>
+	<a style="font-size: 28px; top: 195px; left: 127.5px" href = "albums.html">MUSIC</a>
+	<a style="font-size: 28px; top: 235px; left: 15px" href = "musicVideos.html">MUSIC VIDEOS</a>
+
+	
+	<!-- Audio One -->
+	<img style="position: absolute; width: 450px; top: 
+	-100px; left: 275px" src = "images/mvArtwork/image_1.png">
+	
+
+	<!-- Audio Two -->
+	<img style="position: absolute; width: 450px; top: 
+	125px; left: 275px" src = "images/mvArtwork/image_2.png">
+
+	<!-- Audio Three -->
+	<img style="position: absolute; width: 450px; top: 
+	370px; left: 275px" src = "images/mvArtwork/image_4.png">
+
+
+	<p id="tet" style="left: 295px; top:135px">THIS IS AMERICA</p>
+	<p id="tet" style="left: 375px; top:375px">THRILLER</p>
+	<p id="tet" style="left: 300px; top:625px">SEE YOU AGAIN</p>
+
+
+	<button id="mButton" onclick="musicOne()"></button>
+	<button id="mButton" onclick="musicTwo()" style="top: 260px"></button>
+	<button id="mButton" onclick="musicThree()" style="top: 505px"></button>
+
+	<p id="info"></p>
+
+	<p id="mInfo1">THIS IS AMERICA</p>
+	<p id="mInfo2">Childish Gambino</p>
+	<p id="mInfo3">2018</p>
+	<button id="startVideo" onclick="launch()">Play Music Video</button>
+
+	<script type="text/javascript">
+		var start = true;
+		var currentVideo = 1;
+		function musicOne()
+		{
+			if(start == true)
+			{
+				document.getElementById("mInfo1").style.display = "block";
+				document.getElementById("mInfo2").style.display = "block";
+				document.getElementById("mInfo3").style.display = "block";
+				document.getElementById("startVideo").style.display = "block";
+			}
+			start = false;
+			document.getElementById("mInfo1").style.top = "5px";
+			document.getElementById("mInfo2").style.top = "60px";
+			document.getElementById("mInfo3").style.top = "110px";
+			document.getElementById("startVideo").style.top = "175px";
+			currentVideo = 1;
+
+			document.getElementById("mInfo1").innerHTML = "THIS IS AMERICA";
+			document.getElementById("mInfo2").innerHTML = "Childish Gambino";
+			document.getElementById("mInfo3").innerHTML = "2018";
+
+		}
+
+		function musicTwo()
+		{
+			if(start == true)
+			{
+				document.getElementById("mInfo1").style.display = "block";
+				document.getElementById("mInfo2").style.display = "block";
+				document.getElementById("mInfo3").style.display = "block";
+				document.getElementById("startVideo").style.display = "block";
+			}
+			start = false;
+			document.getElementById("mInfo1").style.top = "245px";
+			document.getElementById("mInfo2").style.top = "300px";
+			document.getElementById("mInfo3").style.top = "350px";
+			document.getElementById("startVideo").style.top = "415px";
+			currentVideo = 2;
+
+			document.getElementById("mInfo1").innerHTML = "Thriller";
+			document.getElementById("mInfo2").innerHTML = "Michael Jackson";
+			document.getElementById("mInfo3").innerHTML = "1982";
+		}
+
+		function musicThree()
+		{
+			if(start == true)
+			{
+				document.getElementById("mInfo1").style.display = "block";
+				document.getElementById("mInfo2").style.display = "block";
+				document.getElementById("mInfo3").style.display = "block";
+				document.getElementById("startVideo").style.display = "block";
+			}
+			start = false;
+
+			document.getElementById("mInfo1").style.top = "485px";
+			document.getElementById("mInfo2").style.top = "540px";
+			document.getElementById("mInfo3").style.top = "590px";
+			document.getElementById("startVideo").style.top = "655px";
+			currentVideo = 3;
+
+			document.getElementById("mInfo1").innerHTML = "See You Again";
+			document.getElementById("mInfo2").innerHTML = "Wiz Khalifa & Charlie Puth";
+			document.getElementById("mInfo3").innerHTML = "2015";
+		}
+
+		function launch()
+		{
+			if(currentVideo == 1)
+				document.location.href = "mv_1.html";
+			if(currentVideo == 2)
+				document.location.href = "mv_2.html";
+			if(currentVideo == 3)
+				document.location.href = "mv_3.html";
+		}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,399 @@
+#artwork
+{
+	position: absolute;
+	width: 600px;
+	left: 17.5px;
+	top: 25px;
+}
+
+
+h1
+{
+	position: absolute;
+	font-family: helvetica;
+	font-size: 50px;
+	left: 580px;
+	top: 100px;
+}
+
+h2
+{
+	position: absolute;
+	font-family: helvetica;
+	font-size: 32px;
+	left: 580px;
+	top: 225px;
+}
+
+.democlass {
+  color: grey;
+}
+
+.democlas {
+  color: black;
+}
+
+a
+{
+
+	position: absolute;
+	font-family: helvetica-bold;
+	font-size: 28px;
+	top: 75px;
+	color: black;
+	text-decoration: none;
+}
+
+a:hover
+{
+	color: lightgrey;
+}
+
+#darkMode
+{
+	position: absolute;
+	left: 520px;
+	width: 75px;
+	top: 625px;
+}
+
+#darkButton
+{
+	position: absolute;
+	left: 520px;
+	width: 75px;
+	height: 75px;
+	top: 625px;
+	opacity: 0%;
+}
+
+#darkModeOff
+{
+	position: absolute;
+	left: 1000px;
+	width: 75px;
+	top: 625px;
+	opacity: 0%;
+}
+
+#darkButtonOff
+{
+	position: absolute;
+	left: 1000px;
+	width: 75px;
+	height: 75px;
+	top: 625px;
+	opacity: 0%;
+}
+
+#play
+{
+	position: absolute;
+	width: 75px;
+	left: 200px;
+	top: 625px;
+}
+
+#playButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 200px;
+	top: 625px;
+	opacity: 0%;
+}
+
+#pause
+{
+	position: absolute;
+	width: 75px;
+	left: 620px;
+	top: 625px;
+	opacity: 0%;
+}
+
+#pauseButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 620px;
+	top: 625px;
+	opacity: 0%;
+}
+
+#skip
+{
+	position: absolute;
+	width: 75px;
+	left: 280px;
+	top: 625px;
+}
+
+#skipButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 280px;
+	top: 625px;
+	opacity: 0%;
+}
+
+#previous
+{
+	position: absolute;
+	width: 75px;
+	left: 120px;
+	top: 625px;
+}
+
+#previousButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 120px;
+	top: 625px;
+	opacity: 0%;
+}
+
+#return
+{
+	position: absolute;
+	width: 75px;
+	left: 32px;
+	top: 550px;
+}
+
+#returnButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	left: 40px;
+	top: 625px;
+	opacity: 0%;
+}
+
+#volume
+{
+	position: absolute;
+	width: 75px;
+	top: 625px;
+	left: 360px;
+}
+
+#volumeButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	top: 625px;
+	left: 360px;
+	opacity: 0%;
+}
+
+#fullScreen
+{
+	position: absolute;
+	width: 75px;
+	top: 625px;
+	left: 440px;
+}
+
+#fullButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	top: 625px;
+	left: 440px;
+	opacity: 0%;
+}
+
+
+
+#timeline
+{
+	position: absolute;
+	width: 475px;
+	height: 50px;
+	left: 80px;
+	top: 570px;
+	background-color: lightgrey;
+}
+
+#timecode
+{
+	position: absolute;
+	width: 0px;
+	height: 50px;
+	left: 80px;
+	top: 570px;
+	background-color: black;
+}
+
+#fullTime
+{
+	position: absolute;
+	width: 620px;
+	height: 75px;
+	top: 760px;
+	left: 350px;
+	background-color: grey;
+	opacity: 0%;
+}
+#fullTimeCode
+{
+	position: absolute;
+	width: 310px;
+	height: 75px;
+	top: 760px;
+	left: 350px;
+	background-color: white;
+	opacity: 0%;
+}
+
+#closeScreen
+{
+	position: absolute;
+	width: 75px;
+	top: 760px;
+	opacity: 0%;
+}
+
+#closeButton
+{
+	position: absolute;
+	width: 75px;
+	height: 75px;
+	top: 760px;
+	opacity: 0%;
+}
+
+
+#fB
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	display: none;
+}
+
+#volumeInfo
+{
+	position: absolute;
+	width: 300px;
+	height: 60px;
+	left: 207.5px;
+	top: 705px;
+	background-color: lightgrey;
+	opacity: 0%;
+}
+
+#minus
+{
+	position: absolute;
+	width: 50px;
+	left: 212.5px;
+	top: 710px;
+	opacity: 0%;
+}
+
+#minusButton
+{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 212.5px;
+	top: 710px;
+	opacity: 0%;
+}
+
+#plus
+{
+	position: absolute;
+	width: 50px;
+	left: 452.5px;
+	top: 710px;
+	opacity: 0%;
+}
+
+#plusButton
+{
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	left: 452.5px;
+	top: 710px;
+	opacity: 0%;
+}
+
+#volumeLine
+{
+	position: absolute;
+	width: 180px;
+	height: 10px;
+	left: 267.5px;
+	top: 730px;
+	background-color: white;
+	opacity: 0%;
+}
+
+#volumeLineLevel
+{
+	position: absolute;
+	width: 180px;
+	height: 10px;
+	left: 267.5px;
+	top: 730px;
+	background-color: black;
+	opacity: 0%;
+}
+
+#volumeLevel
+{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	left: 428.5px;
+	top: 725px;
+	border-radius: 100%;
+	background-color: black;
+	opacity: 0%;
+}
+
+#warning
+{
+	position: absolute;
+	width: 290px;
+	height: 60px;
+	left: 290px;
+	top: 690px;
+	background-color: #EDEDED;
+	color: black;
+	font-family: helvetica-light;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-left: 50px;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

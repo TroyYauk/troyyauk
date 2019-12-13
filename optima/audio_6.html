@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OPTIMA TV</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/fullScreen.css">
+	<link rel="stylesheet" type="text/css" href="css/audioStyle.css">
+</head>
+<body id="body">
+	<a id="dS" style="position: absolute; left: 590px; font-size: 45px; top: 35px" 
+	href = "albums.html">Albums</a>
+	<a id="dS" style="position: absolute; left: 765px; font-size: 45px; top: 35px" 
+	href = "artists.html">Artists</a>
+	<a id="dS" style="position: absolute; left: 915px; font-size: 45px; top: 35px" 
+	href = "songs.html">Songs</a>
+	<div id="fB"></div>
+	
+
+	<audio width="1300" preload="metadata" id="myAudio">
+			<source src="optimaTV/music/album_6/audio_1.mp3" type="audio/mp3">
+	</audio>
+
+	<h1 id="sD">Notorious</h1>
+	<h1 id="dD"style="font-size: 40px; top: 170px">Notorious</h1>
+	<h2 id="sS">Duran Duran</h2>
+
+	<img id="artwork" src = "images/albumArtwork/image_6.png">
+
+	<a href = "albums.html"><img id="return" src = "images/icons/back.png"></a>
+
+	<img id="darkMode" src = "images/icons/dark.png">
+	<button id="darkButton" onclick="darkMode()"></button>
+
+	<img id="darkModeOff" src = "images/icons/dark.png">
+	<button id="darkButtonOff" onclick="darkModeOff()"></button>
+
+	<img id="play" src = "images/icons/playAudio.png">
+	<button id="playButton" onclick="play()"></button>
+
+	<img id="pause" src = "images/icons/pauseAudio.png">
+	<button id="pauseButton" onclick="pause()"></button>
+
+	<img id="skip" src = "images/icons/skip.png">
+	<button id="skipButton" onclick="skip()"></button>
+
+	<img id="previous" src = "images/icons/previous.png">
+	<button id="previousButton" onclick="previous()"></button>
+
+	<img id="volume" src = "images/icons/volume_3.png">
+	<button id="volumeButton" onclick="volume()"></button>
+
+	<div id="volumeInfo"></div>
+	<img id="minus" src = "images/icons/minus.png">
+	<button id="minusButton" onclick="minus()"></button>
+	<img id="plus" src = "images/icons/plus.png">
+	<button id="plusButton" onclick="plus()"></button>
+
+	<div id="volumeLine"></div>
+	<div id="volumeLineLevel"></div>
+	<div id="volumeLevel"></div>
+
+
+
+
+	<img id="fullScreen" src = "images/icons/fullScreen.png">
+	<button id="fullButton" onclick="fullScreen()"></button>
+	<img id="closeScreen" src = "images/icons/fullScreen.png">
+	<button id="closeButton" onclick="closeScreen()"></button>
+
+	<div id="timeline"></div>
+	<div id="timecode"></div>
+
+	<div id="fullTime"></div>
+	<div id="fullTimeCode"></div>
+
+	<p id="warning">Please Press Play<br>Before Entering Full Screen</p>
+
+	<script src = "js/audioScript.js"></script>
+	<script src = "js/fullScreen.js"></script>
+	<script type="text/javascript">
+		var a = document.getElementById("myAudio");
+		var currentSong = 1;
+		var counter = 0, fullCounter = 0;
+		var update;
+		var fullUpdate;
+		var playPau = true;
+		var dur;
+		var playPause = true;
+		var launch = true;
+		var vCount = 0;
+		var currentVolume = 1;
+		var volumeRocker = 180;
+		var volumeAmp = 428;
+		var fullS = false;
+		var looch = true;
+
+		a.addEventListener("loadeddata", function() {
+ 			console.log("Audio data loaded");
+ 			console.log("Audio duration: " + this.duration);
+ 			dur = (this.duration);
+		});
+
+		function play()
+		{
+			a.play();
+			playPau = true;
+			playPause = true;
+			document.getElementById("play").style.left = "620px";
+			document.getElementById("playButton").style.left = "620px";
+			document.getElementById("play").style.opacity = "0%";
+
+			document.getElementById("pause").style.left = "200px";
+			document.getElementById("pauseButton").style.left = "200px";
+			document.getElementById("pause").style.opacity = "100%";
+			if(launch == true)
+			{
+				setInterval(changeSong, 1000);
+				dur = a.duration;
+			}
+			launch = false;
+			fullS = true;
+			looch = false;
+			document.getElementById("warning").style.display = "none";
+		}
+
+		function pause()
+		{
+			a.pause();
+			playPau = false;
+			playPause = false;
+			document.getElementById("play").style.left = "200px";
+			document.getElementById("playButton").style.left = "200px";
+			document.getElementById("play").style.opacity = "100%";
+
+			document.getElementById("pause").style.left = "620px";
+			document.getElementById("pauseButton").style.left = "620px";
+			document.getElementById("pause").style.opacity = "0%";
+			fullS = false;
+			cc = 0;
+			looch = true;
+		}
+
+		function skip()
+		{
+			currentSong = currentSong + 1;
+			if(currentSong == 2)
+			{
+				a.src = "optimaTV/music/album_6/audio_2.mp3";
+				document.getElementById("sD").innerHTML = "American Science";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 3)
+			{
+				a.src = "optimaTV/music/album_6/audio_3.mp3";
+				document.getElementById("sD").innerHTML = "Skin Trade";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 4)
+			{
+				a.src = "optimaTV/music/album_6/audio_4.mp3";
+				document.getElementById("sD").innerHTML = "A Matter Of Feeling";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 5)
+			{
+				a.src = "optimaTV/music/album_6/audio_5.mp3";
+				document.getElementById("sD").innerHTML = "Hold Me";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 6)
+			{
+				a.src = "optimaTV/music/album_6/audio_6.mp3";
+				document.getElementById("sD").innerHTML = "Vertigo (Do the Demolition)";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 7)
+			{
+				a.src = "optimaTV/music/album_6/audio_7.mp3";
+				document.getElementById("sD").innerHTML = "So Misled";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 8)
+			{
+				a.src = "optimaTV/music/album_6/audio_8.mp3";
+				document.getElementById("sD").innerHTML = "Meet El Presidente";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 9)
+			{
+				a.src = "optimaTV/music/album_6/audio_9.mp3";
+				document.getElementById("sD").innerHTML = "Winter Marches On";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 10)
+			{
+				a.src = "optimaTV/music/album_6/audio_10.mp3";
+				document.getElementById("sD").innerHTML = "Proposition";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 11)
+			{
+				document.location.href = "albums.html";
+			}
+			if(looch == true)
+				play();
+		}
+
+		function previous()
+		{
+			currentSong = currentSong - 1;
+			if(currentSong == 1)
+			{
+				a.src = "optimaTV/music/album_6/audio_1.mp3";
+				document.getElementById("sD").innerHTML = "Notorious";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 2)
+			{
+				a.src = "optimaTV/music/album_6/audio_2.mp3";
+				document.getElementById("sD").innerHTML = "American Science";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 3)
+			{
+				a.src = "optimaTV/music/album_6/audio_3.mp3";
+				document.getElementById("sD").innerHTML = "Skin Trade";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 4)
+			{
+				a.src = "optimaTV/music/album_6/audio_4.mp3";
+				document.getElementById("sD").innerHTML = "A Matter Of Feeling";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 5)
+			{
+				a.src = "optimaTV/music/album_6/audio_5.mp3";
+				document.getElementById("sD").innerHTML = "Hold Me";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 6)
+			{
+				a.src = "optimaTV/music/album_6/audio_6.mp3";
+				document.getElementById("sD").innerHTML = "Vertigo (Do the Demolition)";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 7)
+			{
+				a.src = "optimaTV/music/album_6/audio_7.mp3";
+				document.getElementById("sD").innerHTML = "So Misled";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 8)
+			{
+				a.src = "optimaTV/music/album_6/audio_8.mp3";
+				document.getElementById("sD").innerHTML = "Meet El Presidente";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 9)
+			{
+				a.src = "optimaTV/music/album_6/audio_9.mp3";
+				document.getElementById("sD").innerHTML = "Winter Marches On";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 10)
+			{
+				a.src = "optimaTV/music/album_6/audio_10.mp3";
+				document.getElementById("sD").innerHTML = "Proposition";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			
+			if(currentSong == 11 || currentSong == 0)
+			{
+				document.location.href = "albums.html";
+			}
+			if(looch == true)
+				play();
+		}
+
+		function changeSong()
+		{
+			//dur = a.duration;
+			update = (475/dur);
+			fullUpdate = (620/dur);
+			
+			if(playPause == true)
+			{
+				counter = counter + update;
+				fullCounter = fullCounter + fullUpdate;
+				if(counter > 474)
+				{
+					currentSong = currentSong + 1;
+					songChange();
+				}
+			}
+			document.getElementById("fullTimeCode").style.width = fullCounter+"px"
+			document.getElementById("timecode").style.width = counter+"px";
+		}
+
+
+		function songChange()
+		{
+			if(currentSong == 2)
+			{
+				a.src = "optimaTV/music/album_6/audio_2.mp3";
+				document.getElementById("sD").innerHTML = "American Science";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 3)
+			{
+				a.src = "optimaTV/music/album_6/audio_3.mp3";
+				document.getElementById("sD").innerHTML = "Skin Trade";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 4)
+			{
+				a.src = "optimaTV/music/album_6/audio_4.mp3";
+				document.getElementById("sD").innerHTML = "A Matter Of Feeling";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 5)
+			{
+				a.src = "optimaTV/music/album_6/audio_5.mp3";
+				document.getElementById("sD").innerHTML = "Hold Me";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 6)
+			{
+				a.src = "optimaTV/music/album_6/audio_6.mp3";
+				document.getElementById("sD").innerHTML = "Vertigo (Do the Demolition)";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 7)
+			{
+				a.src = "optimaTV/music/album_6/audio_7.mp3";
+				document.getElementById("sD").innerHTML = "So Misled";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 8)
+			{
+				a.src = "optimaTV/music/album_6/audio_8.mp3";
+				document.getElementById("sD").innerHTML = "Meet El Presidente";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 9)
+			{
+				a.src = "optimaTV/music/album_6/audio_9.mp3";
+				document.getElementById("sD").innerHTML = "Winter Marches On";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			if(currentSong == 10)
+			{
+				a.src = "optimaTV/music/album_6/audio_10.mp3";
+				document.getElementById("sD").innerHTML = "Proposition";
+				a.play();
+				counter = 0;
+				fullCounter = 0;
+			}
+			
+			if(currentSong == 11)
+			{
+				document.location.href = "albums.html";
+			}
+		}
+
+		function volume()
+		{
+			vCount = vCount + 1;
+			if(vCount == 3)
+				vCount = 1;
+			if(vCount == 1)
+			{
+				document.getElementById("volumeInfo").style.opacity = "100%"
+				document.getElementById("minus").style.opacity = "100%"
+				document.getElementById("plus").style.opacity = "100%"
+				document.getElementById("volumeLine").style.opacity = "100%"
+				document.getElementById("volumeLineLevel").style.opacity = "100%"
+				document.getElementById("volumeLevel").style.opacity = "100%"
+			}
+			if(vCount == 2)
+			{
+				document.getElementById("volumeInfo").style.opacity = "0%"
+				document.getElementById("minus").style.opacity = "0%"
+				document.getElementById("plus").style.opacity = "0%"
+				document.getElementById("volumeLine").style.opacity = "0%"
+				document.getElementById("volumeLineLevel").style.opacity = "0%"
+				document.getElementById("volumeLevel").style.opacity = "0%"
+			}
+		}
+
+		function minus()
+		{
+			currentVolume = currentVolume - 0.1;
+			a.volume = currentVolume;
+
+			if(currentVolume < 0.1)
+				currentVolume = 0;
+			a.volume = currentVolume;
+
+			volumeRocker = volumeRocker - 16.36;
+			volumeAmp = volumeAmp - 16.36;
+
+			if(volumeRocker < 16.5)
+			{
+				volumeRocker = 0;
+				volumeAmp = 267.5;
+			}
+			volumeIcon();
+
+			document.getElementById("volumeLineLevel").style.width = volumeRocker+"px";
+			document.getElementById("volumeLevel").style.left = volumeAmp+"px";
+		}
+
+		function plus()
+		{
+			currentVolume = currentVolume + 0.1;
+			if(currentVolume > 0.9)
+				currentVolume = 1;
+			a.volume = currentVolume;
+
+			volumeRocker = volumeRocker + 16.36;
+			volumeAmp = volumeAmp + 16.36;
+
+			if(volumeRocker > 179)
+			{
+				volumeRocker = 180;
+				volumeAmp = 428.5;
+			}
+			volumeIcon();
+
+			document.getElementById("volumeLineLevel").style.width = volumeRocker+"px";
+			document.getElementById("volumeLevel").style.left = volumeAmp+"px";
+		}
+
+		function volumeIcon()
+		{
+			if(currentVolume < 0.1)
+				document.getElementById("volume").src = "images/icons/mute.png";
+			if(currentVolume > 0.2 && currentVolume < 0.3)
+				document.getElementById("volume").src = "images/icons/volume_1.png";
+			if(currentVolume > 0.7 && currentVolume < 0.8)
+				document.getElementById("volume").src = "images/icons/volume_2.png";
+			if(currentVolume > 0.8)
+				document.getElementById("volume").src = "images/icons/volume_3.png";
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+

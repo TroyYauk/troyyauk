@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Optima TV</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/mvStyle.css">
+	<script src = "js/jQuery.js"></script>
+</head>
+<body bgcolor="black">
+	<div align = CENTER>
+		<video autoplay preload="metadata" style="position: relative; top: 100px; width: 1000px" id="myVideo">
+				<source src="optimaTV/movies/video_5.mp4" type="video/mp4">
+		</video><br>
+		<div id="box"></div>
+		<h1 id="tlt">THE LION<br>KING</h1>
+	</div>
+	<button id="hover" onclick="hover()"></button>
+	<img id="play" src = "images/icons/playAudio.png">
+	<button id="playButton" onclick="play()"></button>
+	<img id="pause" src = "images/icons/pauseAudio.png">
+	<button id="pauseButton" onclick="pause()"></button>
+
+	<img id="forward" src = "images/icons/forwardAudio.png">
+	<button id="forwardButton" onclick="forward()"></button>
+	<img id="rewind" src = "images/icons/rewindAudio.png">
+	<button id="rewindButton" onclick="rewind()"></button>
+
+	<img id="volume" src = "images/icons/volume_3.png">
+	<button id="volumeButton" onclick="volume()"></button>
+	<div id="volumeInfo"></div>
+
+	<img id="minus" src = "images/icons/minus.png">
+	<button id="minusButton" onclick="minus()"></button>
+	<img id="plus" src = "images/icons/plus.png">
+	<button id="plusButton" onclick="plus()"></button>
+	<div id="volumeLine"></div>
+	<div id="volumeLevelLine"></div>
+	<div id="volumeLevel"></div>
+
+	<img id="fullScreen" src = "images/icons/fullScreen.png">
+	<button id="fullButton" onclick="fullScreen()"></button>
+
+	<img id="closeScreen" src = "images/icons/fullScreen.png">
+	<button id="closeButton" onclick="closeScreen()"></button>
+	
+
+	<div id="timeline"></div>
+	<div id="timeframe"></div>
+
+
+	<a href = "recents.html">
+		<img id="return" src = "images/icons/back.png">
+	</a>
+
+	
+	<div id="nocursor"></div>
+	<div id="fullPlay">Press Play before entering Full Screen</div>
+
+
+
+	<p id="countUp">0:00</p>
+
+	<p id="warning">Click Anywhere On The Screen To Hide Controls</p>
+	<script src = "js/mvScript.js"></script>
+</body>
+</html>
