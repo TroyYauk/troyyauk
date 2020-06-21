@@ -1,34 +1,108 @@
-h1 {
-
+h1
+{
+	position: absolute;
+	top: -25px;
+	left: 25px;
 	font-family: futura;
-	font-size: 63px;
+	font-size: 75px;
 }
 
-h2 {
-
+h2
+{
+	position: absolute;
 	font-family: helvetica;
-	font-size: 32px;
-
+	font-size: 25px;
 }
 
-h3 {
-
+a
+{
+	position: absolute;
 	font-family: helvetica;
-	font-size: 22px;
-
-}
-
-p {
-
-	font-family: helvetica;
+	text-decoration: none;
+	color: black;
 	font-size: 20px;
-
 }
 
-.right{
-    float:right;
+a:hover
+{
+	color: grey;
 }
 
-.left{
-    float:left;
+p
+{
+	position: absolute;
+	font-family: helvetica;
+	font-size: 18px;
 }
+
+h3
+{
+	position: absolute;
+	font-family: helvetica;
+	font-size: 18px;
+}
+
+#gbc
+{
+	text-decoration: underline;
+	font-size: 18px;
+}
+
+#back
+{
+	position: absolute;
+	width: 250px;
+}
+
+#preview1
+{
+	position: absolute;
+	width: 250px;
+}
+#preview2
+{
+	position: absolute;
+	width: 250px;
+}
+#preview3
+{
+	position: absolute;
+	width: 250px;
+}
+#preview4
+{
+	position: absolute;
+	width: 250px;
+}
+#preview5
+{
+	position: absolute;
+	width: 250px;
+}
+
+#shade
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 1056px;
+	background-color: black;
+	opacity: 85%;
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
